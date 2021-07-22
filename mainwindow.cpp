@@ -107,7 +107,7 @@ void MainWindow::on_SortByOrigin_clicked()
 
 void MainWindow::on_pbSave_clicked()
 {
-    QFile file_w("/Users/szymi/Projekty_qt/Dynamic_list_gui/list_out.txt");
+    QFile file_w("list_out.txt");
     if (!file_w.open(QFile::WriteOnly | QFile::Text)){
          QMessageBox::warning(this, "UWAGA:", "Blad pliku");
     }
@@ -126,7 +126,7 @@ void MainWindow::on_pbSave_clicked()
 
 void MainWindow::on_pbRead_clicked()
 {
-    QFile file_w("/Users/szymi/Projekty_qt/Dynamic_list_gui/list_out.txt");
+    QFile file_w("list_out.txt");
     if (!file_w.open(QFile::ReadOnly | QFile::Text)){
          QMessageBox::warning(this, "UWAGA:", "Blad pliku");
     }
